@@ -1,6 +1,6 @@
-import BotCommand from './BotCommand';
-import PingCommand from './impl/PingCommand';
-import OkCommand from './impl/OkCommand';
+import BotCommand from '../commands/BotCommand';
+import PingCommand from '../commands/impl/PingCommand';
+import OkCommand from '../commands/impl/OkCommand';
 
 export default class CommandLookup {
   commands: Array<BotCommand>;
