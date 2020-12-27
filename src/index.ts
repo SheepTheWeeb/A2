@@ -1,15 +1,28 @@
 require('dotenv').config();
 import Discord from 'discord.js';
-const client = new Discord.Client();
+import CommandLookup from './utils/CommandLookup';
+import EmojiLookup from './utils/EmojiLookup';
+import MessageHandler from './controllers/MessageHandler';
 
+const client = new Discord.Client();
+const messageHandler = new MessageHandler(process.env.PREFIX);
+
+// Load in CommandLookup and EmojiLookup
+const emojiLookup = new EmojiLookup();
+export { emojiLookup };
+const commandLookup = new CommandLookup();
+export { commandLookup };
+
+// Init discord client
 client.on('ready', () => {
+  emojiLookup.init(client);
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+// Use message handler to handle messages
 client.on('message', (msg) => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
+  messageHandler.handle(msg);
 });
 
+// Start the bot
 client.login(process.env.DISCORD_TOKEN);
