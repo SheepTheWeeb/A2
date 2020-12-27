@@ -1,11 +1,12 @@
 import BotCommand from './BotCommand';
 import PingCommand from './impl/PingCommand';
+import OkCommand from './impl/OkCommand';
 
 export default class CommandLookup {
   commands: Array<BotCommand>;
 
   constructor() {
-    const commands = [new PingCommand()];
+    const commands = [new PingCommand(), new OkCommand()];
 
     this.commands = commands;
   }

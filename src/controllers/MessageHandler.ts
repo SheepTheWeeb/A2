@@ -28,7 +28,7 @@ export default class MessageHandler {
     const args: Array<string> = splitCommand.slice(1);
 
     // Find command and execute it
-    const command: BotCommand | null = commandLookup.get(primaryCommand);
+    const command: BotCommand | undefined = commandLookup.get(primaryCommand);
     if (command) {
       await command.execute(msg, args);
     }
