@@ -1,0 +1,17 @@
+{
+  "config": {
+    "api": {
+      "endpoints": {
+        "horoscope": "https://aztro.sameerkumar.website/",
+        "foaas": "https://www.foaas.com/",
+        "dnd": "http://www.dnd5eapi.co/",
+        "dictionary": "https://owlbot.info/",
+        "weather1": "https://www.openuv.io/",
+        "weather2": "https://api.oceandrivers.com/static/docs.html"
+      }
+    },
+    "gifs": {
+      "ok": "https://media1.tenor.com/images/1417bce68e499228e79867d802e667c3/tenor.gif"
+    }
+  }
+}

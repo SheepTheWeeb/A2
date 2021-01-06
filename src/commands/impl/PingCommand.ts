@@ -19,8 +19,9 @@ export default class PingCommand implements BotCommand {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   execute(msg: Discord.Message, args: string[]): boolean {
-    if (!this.enabled) return;
+    if (!this.enabled) return false;
     msg.reply('Pong!');
     msg.react(emojiLookup.get('au'));
+    return true;
   }
 }

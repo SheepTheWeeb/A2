@@ -7,5 +7,8 @@ export default interface BotCommand {
   usage: string;
   enabled: boolean;
 
-  execute(msg: Discord.Message, args: Array<string>): boolean;
+  execute(
+    msg: Discord.Message,
+    args: Array<string>
+  ): boolean | Promise<boolean>;
 }

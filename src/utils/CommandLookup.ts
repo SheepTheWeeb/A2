@@ -1,12 +1,17 @@
 import BotCommand from '../commands/BotCommand';
 import PingCommand from '../commands/impl/PingCommand';
 import OkCommand from '../commands/impl/OkCommand';
+import HoroscopeCommand from '../commands/impl/HoroscopeCommand';
 
 export default class CommandLookup {
   commands: Array<BotCommand>;
 
   constructor() {
-    const commands = [new PingCommand(), new OkCommand()];
+    const commands = [
+      new PingCommand(),
+      new OkCommand(),
+      new HoroscopeCommand()
+    ];
 
     this.commands = commands;
   }
