@@ -19,7 +19,7 @@ export default class OkCommand implements BotCommand {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   execute(msg: Discord.Message, args: string[]): boolean {
-    if (!this.enabled) return;
+    if (!this.enabled) return false;
 
     // create embed message
     const embed: Discord.MessageEmbed = new Discord.MessageEmbed()
@@ -30,5 +30,6 @@ export default class OkCommand implements BotCommand {
       .setFooter('Het is oke');
 
     msg.channel.send(embed);
+    return true;
   }
 }
