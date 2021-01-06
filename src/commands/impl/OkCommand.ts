@@ -1,5 +1,6 @@
 import Discord from 'discord.js';
 import BotCommand from '../BotCommand';
+import { config } from '../../config/a2.config.json';
 
 export default class OkCommand implements BotCommand {
   name: string;
@@ -20,14 +21,11 @@ export default class OkCommand implements BotCommand {
   execute(msg: Discord.Message, args: string[]): boolean {
     if (!this.enabled) return;
 
-    const okUrl =
-      'https://media1.tenor.com/images/1417bce68e499228e79867d802e667c3/tenor.gif';
-
     // create embed message
     const embed: Discord.MessageEmbed = new Discord.MessageEmbed()
       .setColor('#0088ff')
       .setTitle('OK')
-      .setImage(okUrl)
+      .setImage(config.gifs.ok)
       .setTimestamp()
       .setFooter('Het is oke');
 
