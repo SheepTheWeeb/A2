@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Wolf",
+    "enemyType": "regular",
+    "examineText": "It's a big angry wolf.",
+    "stats": {
+      "hitpoints": 8,
+      "attack": 3,
+      "defence": 2,
+      "speed": 7
+    }
+  },
+  {
+    "name": "Cultist",
+    "enemyType": "regular",
+    "examineText": "Very mysterious... What could hide under those robes?",
+    "stats": {
+      "hitpoints": 12,
+      "attack": 1,
+      "defence": 7,
+      "speed": 4
+    }
+  },
+  {
+    "name": "Router",
+    "enemyType": "regular",
+    "examineText": "Bzzzt... It does not seem to be working...",
+    "stats": {
+      "hitpoints": 8,
+      "attack": 2,
+      "defence": 5,
+      "speed": 5
+    }
+  },
+  {
+    "name": "Indian Boi",
+    "enemyType": "regular",
+    "examineText": "Please contact Jerry.",
+    "stats": {
+      "hitpoints": 10,
+      "attack": 1,
+      "defence": 2,
+      "speed": 9
+    }
+  },
+  {
+    "name": "Ritselend Zakje",
+    "enemyType": "boss",
+    "examineText": "Chonk",
+    "stats": {
+      "hitpoints": 20,
+      "attack": 3,
+      "defence": 6,
+      "speed": 3
+    }
+  },
+  {
+    "name": "Sheep paralysis demon",
+    "enemyType": "boss",
+    "examineText": "Angy Baah! >:(",
+    "stats": {
+      "hitpoints": 30,
+      "attack": 4,
+      "defence": 3,
+      "speed": 5
+    }
+  },
+  {
+    "name": "Kraken",
+    "enemyType": "tutorial",
+    "examineText": "Very scary! I've seen enough hent... Wait... This game should be kids friendly.",
+    "stats": {
+      "hitpoints": 5,
+      "attack": 2,
+      "defence": 2,
+      "speed": 3
+    }
+  }
+]

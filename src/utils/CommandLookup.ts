@@ -2,6 +2,8 @@ import BotCommand from '../commands/BotCommand';
 import PingCommand from '../commands/impl/PingCommand';
 import OkCommand from '../commands/impl/OkCommand';
 import HoroscopeCommand from '../commands/impl/HoroscopeCommand';
+import StartPirateGameCommand from '../commands/impl/pirate-game/StartPirateGameCommand';
+import LeaveVoiceChatCommand from '../commands/impl/pirate-game/LeaveVoiceChatCommand';
 
 export default class CommandLookup {
   commands: Array<BotCommand>;
@@ -10,7 +12,9 @@ export default class CommandLookup {
     const commands = [
       new PingCommand(),
       new OkCommand(),
-      new HoroscopeCommand()
+      new HoroscopeCommand(),
+      new StartPirateGameCommand(),
+      new LeaveVoiceChatCommand()
     ];
 
     this.commands = commands;
