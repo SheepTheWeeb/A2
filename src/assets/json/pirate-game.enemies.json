@@ -3,6 +3,7 @@
     "name": "Wolf",
     "enemyType": "regular",
     "examineText": "It's a big angry wolf.",
+    "deathMessage": "Rawr XD",
     "stats": {
       "hitpoints": 8,
       "attack": 3,
@@ -14,6 +15,7 @@
     "name": "Cultist",
     "enemyType": "regular",
     "examineText": "Very mysterious... What could hide under those robes?",
+    "deathMessage": "Baah",
     "stats": {
       "hitpoints": 12,
       "attack": 1,
@@ -25,6 +27,7 @@
     "name": "Router",
     "enemyType": "regular",
     "examineText": "Bzzzt... It does not seem to be working...",
+    "deathMessage": "Biem!",
     "stats": {
       "hitpoints": 8,
       "attack": 2,
@@ -35,7 +38,8 @@
   {
     "name": "Indian Boi",
     "enemyType": "regular",
-    "examineText": "Please contact Jerry.",
+    "examineText": "Helo Linda",
+    "deathMessage": "Please contact Linda",
     "stats": {
       "hitpoints": 10,
       "attack": 1,
@@ -47,6 +51,7 @@
     "name": "Ritselend Zakje",
     "enemyType": "boss",
     "examineText": "Chonk",
+    "deathMessage": ":(",
     "stats": {
       "hitpoints": 20,
       "attack": 3,
@@ -58,6 +63,7 @@
     "name": "Sheep paralysis demon",
     "enemyType": "boss",
     "examineText": "Angy Baah! >:(",
+    "deathMessage": "Sad Baah",
     "stats": {
       "hitpoints": 30,
       "attack": 4,
@@ -69,6 +75,7 @@
     "name": "Kraken",
     "enemyType": "tutorial",
     "examineText": "Very scary! I've seen enough hent... Wait... This game should be kids friendly.",
+    "deathMessage": "Blub... *verzuipt*",
     "stats": {
       "hitpoints": 5,
       "attack": 2,

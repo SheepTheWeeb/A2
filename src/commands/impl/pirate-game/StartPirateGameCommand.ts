@@ -23,13 +23,8 @@ export default class StartPirateGameCommand implements BotCommand {
   async execute(msg: Discord.Message, args: string[]): Promise<boolean> {
     if (!this.enabled) return false;
 
-    if (args[0] === 'skip') {
-      this.skipCutscene = true;
-    }
-
-    if (args[1] === 'no-music') {
-      this.musicEnabled = false;
-    }
+    this.skipCutscene = args.includes('skip');
+    this.musicEnabled = !args.includes('no-music');
 
     if (this.musicEnabled) {
       const { voice } = msg.member;
