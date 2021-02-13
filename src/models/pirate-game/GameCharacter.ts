@@ -1,5 +1,5 @@
 import GameEntity from './GameEntity';
-import Weapon from './Weapon';
+import Weapon from './items/Weapon';
 
 export default class GameCharacter implements GameEntity {
   static readonly MAX_DEF = 20;

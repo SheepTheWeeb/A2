@@ -1,16 +1,16 @@
 import GameCharacter from '../../models/pirate-game/GameCharacter';
 import Player from '../../models/pirate-game/Player';
-import BlessingOfTheSheep from '../../models/pirate-game/Spells/BlessingOfTheSheep';
-import Blizzard from '../../models/pirate-game/Spells/Blizzard';
-import ChaosBlast from '../../models/pirate-game/Spells/ChaosBlast';
-import CheetosDeletos from '../../models/pirate-game/Spells/CheetosDeletos';
-import FireStorm from '../../models/pirate-game/Spells/FireStorm';
-import HealPulse from '../../models/pirate-game/Spells/HealPulse';
+import BlessingOfTheSheep from '../../models/pirate-game/spells/BlessingOfTheSheep';
+import Blizzard from '../../models/pirate-game/spells/Blizzard';
+import ChaosBlast from '../../models/pirate-game/spells/ChaosBlast';
+import CheetosDeletos from '../../models/pirate-game/spells/CheetosDeletos';
+import FireStorm from '../../models/pirate-game/spells/FireStorm';
+import HealPulse from '../../models/pirate-game/spells/HealPulse';
 import SmolPPStrike from '../../models/pirate-game/spells/SmolPPStrike';
-import Soeppie from '../../models/pirate-game/Spells/Soeppie';
+import Soeppie from '../../models/pirate-game/spells/Soeppie';
 import Spell from '../../models/pirate-game/spells/Spell';
-import WindMissle from '../../models/pirate-game/Spells/WindMissle';
-import YeetusMaximus from '../../models/pirate-game/Spells/YeetusMaximus';
+import WindMissle from '../../models/pirate-game/spells/WindMissle';
+import YeetusMaximus from '../../models/pirate-game/spells/YeetusMaximus';
 
 export default class SpellHandler {
   static spells: Spell[] = [

@@ -1,7 +1,7 @@
 import SpellHandler from '../../controllers/pirate-game/SpellHandler';
 import Enemy from './Enemy';
 import GameCharacter from './GameCharacter';
-import Weapon from './Weapon';
+import Weapon from './items/Weapon';
 
 export default class Player extends GameCharacter {
   magic: number;
@@ -30,6 +30,6 @@ export default class Player extends GameCharacter {
   }
 
   examine(): void {
-    //TODO
+    // TODO: implement this
   }
 }

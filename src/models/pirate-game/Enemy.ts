@@ -1,5 +1,5 @@
 import GameCharacter from './GameCharacter';
-import Weapon from './Weapon';
+import Weapon from './items/Weapon';
 
 export default class Enemy extends GameCharacter {
   deathMessage: string;
