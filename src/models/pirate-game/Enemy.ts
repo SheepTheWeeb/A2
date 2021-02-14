@@ -7,7 +7,7 @@ export default class Enemy extends GameCharacter {
   constructor(
     name: string,
     examineText: string,
-    img: File,
+    imgPath: string,
     att: number,
     def: number,
     speed: number,
@@ -15,7 +15,7 @@ export default class Enemy extends GameCharacter {
     deathMessage: string,
     weapon?: Weapon
   ) {
-    super(name, examineText, img, att, def, speed, maxHp, weapon);
+    super(name, examineText, imgPath, att, def, speed, maxHp, weapon);
     this.deathMessage = deathMessage;
   }
 }

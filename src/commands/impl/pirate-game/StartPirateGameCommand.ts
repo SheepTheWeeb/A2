@@ -1,12 +1,8 @@
 import Discord from 'discord.js';
 import path from 'path';
+import fs from 'fs';
 import GameState from '../../../models/pirate-game/GameState';
 import BotCommand from '../../BotCommand';
-
-import enemyInformation from '../../../assets/json/pirate-game.enemies.json';
-import characterInformation from '../../../assets/json/pirate-game.characters.json';
-import itemInformation from '../../../assets/json/pirate-game.items.json';
-
 export default class StartPirateGameCommand implements BotCommand {
   name: string;
   alias: string[];
@@ -36,8 +32,6 @@ export default class StartPirateGameCommand implements BotCommand {
     this.skipCutscene = args.includes('skip');
     this.musicEnabled = args.includes('music');
 
-    // TODO: init enemies, characters and items
-
     GameState.resetGame();
     const gameState: GameState = GameState.getInstance();
     gameState.channel = msg.channel as Discord.TextChannel;
@@ -47,6 +41,22 @@ export default class StartPirateGameCommand implements BotCommand {
     this.playCutscene(msg);
 
     // TODO: implement character selection etc
+    // create embed message
+    const imgPath = path.join(
+      __dirname,
+      '../../../',
+      gameState.enemyCatelogue[6].imgPath
+    );
+    const attachment = new Discord.MessageAttachment(imgPath, 'test.png');
+    const embed: Discord.MessageEmbed = new Discord.MessageEmbed()
+      .setColor('#0088ff')
+      .setTitle('OK')
+      .attachFiles([attachment])
+      .setImage(`attachment://test.png`)
+      .setTimestamp()
+      .setFooter('Het is oke');
+
+    msg.channel.send(embed);
 
     return true;
   }

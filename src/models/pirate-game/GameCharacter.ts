@@ -6,7 +6,7 @@ export default class GameCharacter implements GameEntity {
 
   name: string;
   examineText: string;
-  img: File;
+  imgPath: string;
   att: number;
   def: number;
   speed: number;
@@ -17,7 +17,7 @@ export default class GameCharacter implements GameEntity {
   constructor(
     name: string,
     examineText: string,
-    img: File,
+    imgPath: string,
     att: number,
     def: number,
     speed: number,
@@ -26,7 +26,7 @@ export default class GameCharacter implements GameEntity {
   ) {
     this.name = name;
     this.examineText = examineText;
-    this.img = img;
+    this.imgPath = imgPath;
     this.att = att;
     this.def = def;
     this.speed = speed;

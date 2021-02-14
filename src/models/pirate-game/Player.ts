@@ -9,7 +9,7 @@ export default class Player extends GameCharacter {
   constructor(
     name: string,
     examineText: string,
-    img: File,
+    imgPath: string,
     att: number,
     def: number,
     magic: number,
@@ -17,7 +17,7 @@ export default class Player extends GameCharacter {
     maxHp: number,
     weapon?: Weapon
   ) {
-    super(name, examineText, img, att, def, speed, maxHp, weapon);
+    super(name, examineText, imgPath, att, def, speed, maxHp, weapon);
     this.magic = magic;
   }
 
